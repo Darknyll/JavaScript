@@ -1,76 +1,67 @@
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 
-let Group = [
+let group = [
     'Red Hot Chili Peppers', 'Rammstein', 'Cannibal Corpse', 'The Cranberries', 'Power Woolf', 'Skillet', 'Linkin Park',
     'Thirty Seconds To Mars', 'The Offspring', 'System Of A Down'
 ]
-console.log(Group[0]);
-console.log(Group[1]);
-console.log(Group[2]);
-console.log(Group[3]);
-console.log(Group[4]);
-console.log(Group[5]);
-console.log(Group[6]);
-console.log(Group[7]);
-console.log(Group[8]);
-console.log(Group[9]);
+console.log(group[0]);
+console.log(group[1]);
+console.log(group[2]);
+console.log(group[3]);
+console.log(group[4]);
+console.log(group[5]);
+console.log(group[6]);
+console.log(group[7]);
+console.log(group[8]);
+console.log(group[9]);
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 
-let Books1 = {
+let books1 = {
     title: '1984',
     pageCount: '312',
     genre: 'Наукова фантастика'
 }
-let Books2 = {
+let books2 = {
     title: 'Скандинавська міфологія',
     pageCount: '256',
     genre: 'Міф'
 }
-let Books3 = {
+let books3 = {
     title: 'Гаррі Поттер і філософський камінь',
     pageCount: '320',
     genre: 'Пригоди'
 }
-console.log(Books1, Books2, Books3);
+console.log(books1, books2, books3);
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - масив.
 // Кожен автор має поля name,age
 
-Books1 = {
-    title: '1984',
-    pageCount: '312',
-    genre: 'Наукова фантастика',
-    authors: [
+books1.authors =
+    [
         {
             name: 'Джордж Орвелл',
             age: '46'
         }
     ]
-}
-Books2 = {
-    title: 'Скандинавська міфологія',
-    pageCount: '256',
-    genre: 'Міф',
-    authors: [
+
+books2.authors =
+     [
         {
             name: 'Ніл Ґейман',
             age: '61'
         }
     ]
-}
-Books3 = {
-    title: 'Гаррі Поттер і філософський камінь',
-    pageCount: '320',
-    genre: 'Пригоди',
-    authors: [
+
+books3.authors =
+     [
         {
             name: 'Джоан Роулінг',
             age: '56'
         }
     ]
-}
-console.log(Books1, Books2, Books3);
+
+console.log(books1, books2, books3);
 
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password.
 // Вивести в консоль пароль кожного користувача
