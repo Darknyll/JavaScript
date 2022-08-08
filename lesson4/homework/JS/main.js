@@ -42,13 +42,12 @@ while (i < documents.length) {
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 
-for (let listOfItem of listOfItems) {
-    document.write('<ul>');
-    for (listOfItem of listOfItems) {
-        document.write(`<li>${listOfItem}`)
+document.write(`<ul>`);
+for (const listOfItem of listOfItems) {
+        document.write(`<li>${listOfItem}`);
     }
-    documents.write('</ul>')
-}
+    document.write(`</ul>`);
+
 
 //     Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону Зробити адекватну стилізацію
