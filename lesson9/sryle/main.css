@@ -1,0 +1,12 @@
+.monTimeFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titleName {
+    text-align: center;
+}
+
+.modul {
+    text-align: center;
+}
