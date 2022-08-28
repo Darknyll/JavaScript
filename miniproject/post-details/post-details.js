@@ -1,13 +1,21 @@
-//     На странице post-details.html:
-// 7 Вивести всю, без виключення, інформацію про об'єкт post на який клікнули .
-// 8 Нижчє інформаці про пост, вивести всі коментарі поточного поста
-// (ендпоінт  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
+//     На сторінці post-details.html:
+// 7 Вивести всю, без виключення, інформацію про об'єкт post на який клацнули.
+// 8 Нижче інформація про пост, вивести всі коментарі поточного поста
+// (endpoint  - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
 
 let post = localStorage.getItem('post');
 JSON.parse(post);
 
 let mainDiv2 = document.createElement('div');
-mainDiv2.classList.add('main')
+mainDiv2.classList.add('main');
+
+let backButton = document.createElement('button');
+backButton.classList.add('backButton');
+mainDiv2.appendChild(backButton);
+backButton.onclick = function (){
+        location.href = '../user-details/user-details.html'
+};
+backButton.innerText = `< < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <`;
 
 fetch(`https://jsonplaceholder.typicode.com/posts/${post}`)
     .then(response => response.json())
@@ -20,7 +28,6 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${post}`)
         p.innerText =`${post.userId} ${post.id} ${post.title} ${post.body}`;
         div.appendChild(p);
         mainDiv2.appendChild(div)
-
     });
 fetch(`https://jsonplaceholder.typicode.com/posts/${post}/comments`)
     .then(response => response.json())

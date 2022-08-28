@@ -9,12 +9,13 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    box-sizing: border-box;
 }
 
 .mainDiv {
     display: flex;
     height: 350px;
-    width: 200px;
+    width: 250px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -22,6 +23,7 @@ button {
     background: lawngreen;
     margin: 3px;
     border-radius: 35px;
+    box-sizing: border-box;
 }
 
 .supDiv {
@@ -35,14 +37,28 @@ button {
     background: lawngreen;
     margin: 3px;
     border-radius: 35px;
+    box-sizing: border-box;
 }
 
-p {
+p,h2 {
     font-family: cursive;
-    font-size: 15px;
     text-align: center;
 }
 
 .mainDivDetails{
     display: flex;
+    box-sizing: border-box;
+}
+
+.backButton {
+    height: 350px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 3px;
+}
+.backButton1 {
+    height: 700px;
+    width: 50px;
+    border-radius: 5px;
+    margin: 3px;
 }
