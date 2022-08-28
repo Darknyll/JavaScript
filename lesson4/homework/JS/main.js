@@ -105,7 +105,6 @@ for (let i = 0; i < users.length; i++) {
     if (users[i].status){
         document.write(`<div>${users[i].name} ${users[i].age} ${users[i].status}</div>`);
     }
-
 }
 
 // - користувачів зі статусом false
